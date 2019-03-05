@@ -1,0 +1,24 @@
+version: '3'
+services:
+  mediawiki:
+    image: semantic-mediawiki-custom
+    build: .
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - database
+    volumes:
+      - /var/www/html/images
+      # After initial setup, download LocalSettings.php to the same directory as
+      # this yaml and uncomment the following line and use compose to restart
+      # the mediawiki service
+      #- ./LocalSettings.php:/var/www/html/LocalSettings.php
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'

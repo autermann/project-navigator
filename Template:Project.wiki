@@ -1,0 +1,45 @@
+<noinclude>
+This is the "Project" template.
+It should be called in the following format:
+<pre>
+{{Project
+|Used components=
+|Enhanced components=
+|New components=
+|Other keywords=
+|Contact=
+}}
+</pre>
+
+Edit the page to see the template text.
+
+{{#cargo_declare:_table=Projects|
+Used_components=List (,) of String|
+Enhanced_components=List (,) of String|
+New_components=List (,) of String|
+Other_keywords=List (,) of String|
+Contact=List (,) of String
+}}
+</noinclude>
+
+<includeonly>
+{{#cargo_store:_table=Projects|
+Used_components={{{Used components|}}}|
+Enhanced_components={{{Enhanced components|}}}|
+New_components={{{New components|}}}|
+Other_keywords={{{Other keywords|}}}|
+Contact={{{Contact|}}}
+}}
+
+'''Used components:''' {{#formredlink:form=Components|target={{{Used components|}}}}}
+
+'''Enhanced components:''' {{{Enhanced components|}}}
+
+'''Newly developed components:''' {{{New components|}}}
+
+'''Other Keywords:''' {{{Other keywords|}}}
+
+'''Contact staff:''' {{{Contact|}}}
+
+[[Category:Projects]]
+</includeonly>
