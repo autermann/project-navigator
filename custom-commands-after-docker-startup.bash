@@ -1,2 +1,2 @@
 cd /var/www/html/extensions/Cargo/maintenance
-php cargoRecreateData.php --table Projects
+php cargoRecreateData.php --table Project
