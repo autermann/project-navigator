@@ -13,7 +13,7 @@ It should be called in the following format:
 
 Edit the page to see the template text.
 
-{{#cargo_declare:_table=Projects|
+{{#cargo_declare:_table=Project|
 Used_components=List (,) of String|
 Enhanced_components=List (,) of String|
 New_components=List (,) of String|
@@ -23,7 +23,7 @@ Contact=List (,) of String
 </noinclude>
 
 <includeonly>
-{{#cargo_store:_table=Projects|
+{{#cargo_store:_table=Project|
 Used_components={{{Used components|}}}|
 Enhanced_components={{{Enhanced components|}}}|
 New_components={{{New components|}}}|
